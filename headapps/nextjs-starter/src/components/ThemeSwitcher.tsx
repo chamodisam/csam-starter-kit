@@ -35,19 +35,19 @@ export const Default = (props: ThemeSwitcherProps): JSX.Element => {
   };
 
   return (
-    <section className={`px-4 py-4 ${props?.params?.styles}`}>
+    <section className={`${props?.params?.styles}`}>
       <button
         onClick={toggleTheme}
         aria-label="Toggle theme"
         className={`
-        w-16 h-9 rounded-full border-2 flex items-center relative transition-colors duration-300
+        relative flex items-center w-16 h-8 rounded-full border-4 transition-colors duration-300
         ${theme === 'light' ? 'bg-foreground' : 'bg-background'}
       `}
       >
         <span
           className={`
-          block w-7 h-7 rounded-full absolute transition-all duration-300
-          ${theme === 'light' ? 'left-7 bg-background' : 'left-1 bg-background-dark'}
+          absolute block w-6 h-6 rounded-full transition-all duration-300
+          ${theme === 'light' ? 'translate-x-0 bg-background' : 'translate-x-8 bg-background-dark'}
         `}
         />
       </button>
