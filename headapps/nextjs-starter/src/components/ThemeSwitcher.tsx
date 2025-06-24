@@ -47,7 +47,9 @@ export const Default = (props: ThemeSwitcherProps): JSX.Element => {
         <span
           className={`
           absolute block w-6 h-6 rounded-full transition-all duration-300
-          ${theme === 'light' ? 'translate-x-0 bg-background' : 'translate-x-8 bg-background-dark'}
+          ${
+            theme === 'light' ? 'translate-x-0 bg-background' : 'translate-x-8.5 bg-background-dark'
+          }
         `}
         />
       </button>
