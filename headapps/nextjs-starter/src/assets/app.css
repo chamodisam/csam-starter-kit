@@ -1,13 +1,12 @@
-a[target='_blank']:after {
-  content: '\1F5D7'
-}
-
 /*
   Hides Sitecore editor markup,
   if you run the app in connected mode while the Sitecore cookies
   are set to edit mode.
 */
-.scChromeData, .scpm { display: none !important; }
+.scChromeData,
+.scpm {
+  display: none !important;
+}
 
 /*
   Styles for default JSS error components
@@ -22,9 +21,9 @@ a[target='_blank']:after {
   Style for default content block
 */
 .contentTitle {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 a {
